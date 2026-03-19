@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ZuriTym: activity_offerwall -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="16dp" android:background="@color/background">
+    <TextView android:id="@+id/tvTitle" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:textSize="18sp" android:textStyle="bold" android:textColor="@color/textPrimary" android:padding="8dp"/>
+    <TextView android:id="@+id/tvDescription" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:textColor="@color/textSecondary" android:padding="8dp"/>
+    <TextView android:id="@+id/tvBalance" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:textSize="24sp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:padding="8dp"/>
+    <TextView android:id="@+id/tvReward" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textColor="@color/success" android:textStyle="bold" android:padding="4dp"/>
+    <TextView android:id="@+id/tvType" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary" android:padding="4dp"/>
+    <TextView android:id="@+id/tvTimer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="4dp"/>
+    <TextView android:id="@+id/tvStatus" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:visibility="gone" android:textColor="@color/warning" android:padding="4dp"/>
+    <TextView android:id="@+id/tvLimit" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textColor="@color/textSecondary" android:padding="4dp"/>
+    <TextView android:id="@+id/tvResult" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:textSize="20sp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:gravity="center"
+        android:visibility="gone" android:padding="16dp"/>
+    <TextView android:id="@+id/tvRank" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textSize="20sp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:padding="4dp"/>
+    <TextView android:id="@+id/tvMyRank" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:textSize="16sp" android:textColor="@color/colorPrimary" android:padding="8dp" android:gravity="center"/>
+    <TextView android:id="@+id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textSize="16sp" android:textStyle="bold" android:textColor="@color/textPrimary" android:padding="4dp"/>
+    <TextView android:id="@+id/tvEmail" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textColor="@color/textSecondary" android:padding="4dp"/>
+    <TextView android:id="@+id/tvPoints" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary" android:textStyle="bold" android:padding="4dp"/>
+    <TextView android:id="@+id/tvReferralCode" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textColor="@color/textSecondary" android:padding="4dp"/>
+    <TextView android:id="@+id/tvCardsLeft" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textColor="@color/textSecondary" android:padding="4dp"/>
+    <TextView android:id="@+id/tvSpinsLeft" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textColor="@color/textSecondary" android:padding="4dp"/>
+    <TextView android:id="@+id/tvTotalEarned" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textColor="@color/success" android:textStyle="bold" android:padding="4dp"/>
+    <TextView android:id="@+id/tvTotalWithdrawn" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textColor="@color/danger" android:textStyle="bold" android:padding="4dp"/>
+    <TextView android:id="@+id/tvDesc" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:textColor="@color/textPrimary" android:padding="4dp"/>
+    <TextView android:id="@+id/tvDate" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textColor="@color/textSecondary" android:textSize="11sp" android:padding="4dp"/>
+    <TextView android:id="@+id/tvAmount" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textStyle="bold" android:textSize="15sp" android:padding="4dp"/>
+    <TextView android:id="@+id/tvMessage" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textColor="@color/textPrimary" android:padding="4dp"/>
+    <TextView android:id="@+id/tvTime" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textColor="@color/textSecondary" android:textSize="11sp" android:padding="2dp"/>
+    <TextView android:id="@+id/tvMinWithdrawal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textColor="@color/textSecondary" android:padding="4dp"/>
+    <View android:id="@+id/spinWheel" android:layout_width="260dp" android:layout_height="260dp"
+        android:layout_gravity="center" android:background="@color/colorPrimary"/>
+    <de.hdodenhof.circleimageview.CircleImageView android:id="@+id/ivAvatar"
+        android:layout_width="60dp" android:layout_height="60dp"
+        android:src="@drawable/ic_avatar" android:layout_gravity="center"/>
+    <Button android:id="@+id/btnSpin" android:layout_width="match_parent" android:layout_height="52dp"
+        android:text="Spin!" android:backgroundTint="@color/colorPrimary" android:textColor="#FFFFFF"/>
+    <Button android:id="@+id/btnGetCard" android:layout_width="match_parent" android:layout_height="52dp"
+        android:text="Get Scratch Card" android:backgroundTint="@color/colorPrimary" android:textColor="#FFFFFF" android:layout_marginBottom="8dp"/>
+    <Button android:id="@+id/btnScratch" android:layout_width="match_parent" android:layout_height="52dp"
+        android:text="Scratch!" android:backgroundTint="@color/colorAccent" android:textColor="#FFFFFF"/>
+    <Button android:id="@+id/btnStartComplete" android:layout_width="match_parent" android:layout_height="52dp"
+        android:text="Start Task" android:backgroundTint="@color/colorPrimary" android:textColor="#FFFFFF"/>
+    <Button android:id="@+id/btnLogout" android:layout_width="match_parent" android:layout_height="48dp"
+        android:text="Logout" android:backgroundTint="@color/danger" android:textColor="#FFFFFF" android:layout_marginTop="16dp"/>
+    <Button android:id="@+id/btnViewWallet" android:layout_width="match_parent" android:layout_height="48dp"
+        android:text="View Transactions" android:backgroundTint="@color/colorPrimary" android:textColor="#FFFFFF"/>
+    <Button android:id="@+id/btnWithdraw" android:layout_width="match_parent" android:layout_height="48dp"
+        android:text="Withdraw Points" android:backgroundTint="@color/colorAccent" android:textColor="#FFFFFF" android:layout_marginTop="8dp"/>
+    <Button android:id="@+id/btnRedeem" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Redeem" android:backgroundTint="@color/colorPrimary" android:textColor="#FFFFFF"/>
+    <Button android:id="@+id/btnWithdraw2" android:layout_width="match_parent" android:layout_height="48dp"
+        android:text="Request Withdrawal" android:backgroundTint="@color/colorPrimary" android:textColor="#FFFFFF"/>
+    <EditText android:id="@+id/etPromoCode" android:layout_width="match_parent" android:layout_height="48dp"
+        android:hint="Enter promo code" android:padding="8dp"
+        android:background="@drawable/card_rounded" android:layout_marginBottom="8dp"/>
+    <EditText android:id="@+id/etMessage" android:layout_width="match_parent" android:layout_height="48dp"
+        android:hint="Type a message..." android:background="@drawable/card_rounded" android:padding="8dp"/>
+    <EditText android:id="@+id/etAmount" android:layout_width="match_parent" android:layout_height="48dp"
+        android:hint="Amount in points" android:inputType="numberDecimal"
+        android:background="@drawable/card_rounded" android:padding="8dp" android:layout_marginBottom="8dp"/>
+    <EditText android:id="@+id/etPaymentDetail" android:layout_width="match_parent" android:layout_height="48dp"
+        android:hint="Payment detail (phone/email)" android:background="@drawable/card_rounded"
+        android:padding="8dp" android:layout_marginBottom="8dp"/>
+    <Spinner android:id="@+id/spMethod" android:layout_width="match_parent" android:layout_height="48dp"
+        android:layout_marginBottom="12dp"/>
+    <ImageButton android:id="@+id/btnSend" android:layout_width="48dp" android:layout_height="48dp"
+        android:src="@android:drawable/ic_menu_send" android:background="@color/colorPrimary"/>
+    <com.google.android.material.tabs.TabLayout android:id="@+id/tabLayout"
+        android:layout_width="match_parent" android:layout_height="48dp"
+        android:background="@color/white">
+        <com.google.android.material.tabs.TabItem android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="All Time"/>
+        <com.google.android.material.tabs.TabItem android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Weekly"/>
+        <com.google.android.material.tabs.TabItem android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Monthly"/>
+    </com.google.android.material.tabs.TabLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvTasks"
+        android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvLeaders"
+        android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvTransactions"
+        android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvOfferwalls"
+        android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvMessages"
+        android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <LinearLayout android:id="@+id/cardSpin" android:layout_width="match_parent" android:layout_height="80dp"
+        android:orientation="horizontal" android:gravity="center_vertical" android:background="@drawable/card_rounded"
+        android:padding="16dp" android:layout_marginBottom="12dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🎡  Spin &amp; Earn" android:textSize="18sp" android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cardScratch" android:layout_width="match_parent" android:layout_height="80dp"
+        android:orientation="horizontal" android:gravity="center_vertical" android:background="@drawable/card_rounded"
+        android:padding="16dp" android:layout_marginBottom="12dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🎟️  Scratch Card" android:textSize="18sp" android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cardOfferwall" android:layout_width="match_parent" android:layout_height="80dp"
+        android:orientation="horizontal" android:gravity="center_vertical" android:background="@drawable/card_rounded"
+        android:padding="16dp" android:layout_marginBottom="12dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🏪  Offerwalls" android:textSize="18sp" android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cardLeaderboard" android:layout_width="match_parent" android:layout_height="80dp"
+        android:orientation="horizontal" android:gravity="center_vertical" android:background="@drawable/card_rounded"
+        android:padding="16dp" android:layout_marginBottom="12dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🏆  Leaderboard" android:textSize="18sp" android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cardChat" android:layout_width="match_parent" android:layout_height="80dp"
+        android:orientation="horizontal" android:gravity="center_vertical" android:background="@drawable/card_rounded"
+        android:padding="16dp" android:layout_marginBottom="12dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="💬  Chat Room" android:textSize="18sp" android:textStyle="bold"/>
+    </LinearLayout>
+    <WebView android:id="@+id/webView" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <ProgressBar android:id="@+id/progressBar" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:visibility="gone" android:layout_gravity="center"/>
+</LinearLayout>
